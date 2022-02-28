@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travellers landing page | Home </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="front ">
+
+        <header>
+            <div class="logo">travel</div>
+            <div class="toggle "></div>
+        </header>
+
+        <video src="video.mp4" muted autoplay loop></video>
+
+        <div class="overlay">
+
+        </div>
+
+        <div class="textarea">
+            <h2>never stop</h2>
+            <h3>exploring the world</h3>
+            <p>As you take in the sights, smells, and sensations of a new destination, you’re doing more than making
+                memories. Travel experiences are known to prompt your brain to think differently and more creatively
+                too!</p>
+            <a href="#">explore</a>
+        </div>
+
+
+        <ul class="socialmedia">
+            <li><a href="#"><img src="facebook.png" alt="facebook image"></a></li>
+            <li><a href="#"><img src="twitter.png" alt="twitter image"></a></li>
+            <li><a href="#"><img src="instagram.png" alt="instagram image"></a></li>
+        </ul>
+    </section>
+
+    <div class="menubar">
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our blogs</a></li>
+            <li><a href="#">contact us</a></li>
+            <li><a href="#">news</a></li>
+            <li><a href="#">email us</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menubar = document.querySelector('.toggle')
+        const front = document.querySelector('.front')
+
+        menubar.addEventListener('click', () => {
+            menubar.classList.toggle('active')
+            front.classList.toggle('active')
+        })
+
+    </script>
+
+</body>
+
+</html>
